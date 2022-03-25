@@ -1,0 +1,16 @@
+<div style="margin-top:55px; padding-top:55px;" class="container-fluid text-sm-center p-5 bg-info text-white "> <!-- bg-light is background color & p-5 is padding -->
+    <h1 class="display-2">  <%= @myfriend.first_name %>   <%= @myfriend.last_name %></h1>
+    <p class="lead">
+      <%= @myfriend.email %>  |
+      <%= @myfriend.phone %>  |
+      <%= @myfriend.twitter %>
+    </p>
+    <br/>
+<%= link_to 'Edit', edit_myfriend_path(@myfriend), class:"btn btn-secondary" %>
+<%= link_to 'Delete', @myfriend, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"%>
+
+<%= link_to 'Back', myfriends_path,class:"btn btn-dark" %>
+</div>
+
+
+

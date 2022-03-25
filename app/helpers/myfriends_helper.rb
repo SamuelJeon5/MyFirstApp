@@ -1,0 +1,2 @@
+module MyfriendsHelper
+end
